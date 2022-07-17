@@ -1,0 +1,526 @@
+@media screen and (min-width: 1921px) {
+    .not-visible {
+        display: none;
+    }
+
+    #page-container {
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+    #nav-link{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1vw;
+        letter-spacing: 1px;
+    }
+
+    #nav-link:hover{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1vw;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #nav-link-active{
+        color: white;
+        font-size: 1vw;
+        font-family: minion-pro, serif;
+        font-weight: bold;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #Logo-box {
+        width: 40%;
+    }
+
+    #nav-logo{
+        width:3.4vw;
+    }
+
+    #logo-big {
+        color: white;
+        font-size: 1.3vw;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        line-height: 0;
+    }
+
+    #logo-small {
+        color: white;
+        font-size: 0.65vw;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 0;
+    }
+
+    #toolbar {
+        margin: 0;
+    }
+
+    #home-title-big {
+        font-weight: 900;
+        font-size: 2.5vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-title-small {
+        font-weight: 900;
+        font-size: 1.2vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-text {
+        font-weight: 500;
+        font-size: 1.2vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-img{
+        width:100%;
+
+    }
+
+    #end-logo{
+        width: 15vw;
+        margin-bottom: 3.5%;
+    }
+
+    #end-logo-text{
+        color: #052339;
+        font-size: 1vw;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 3.3%;
+    }
+}
+
+@media screen and (min-width: 1681px) and (max-width: 1920px){
+    .not-visible {
+        display: none;
+    }
+
+    #page-container {
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+    #nav-link{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.2vw;
+        letter-spacing: 1px;
+    }
+
+    #nav-link:hover{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.2vw;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #nav-link-active{
+        color: white;
+        font-size: 1.2vw;
+        font-family: minion-pro, serif;
+        font-weight: bold;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #Logo-box {
+        width: 40%;
+    }
+
+    #nav-logo{
+        width:5.8vh;
+    }
+
+    #logo-big {
+        color: white;
+        font-size: 2.45vh;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        line-height: 0;
+    }
+
+    #logo-small {
+        color: white;
+        font-size: 1.2vh;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 0;
+    }
+
+    #toolbar {
+        margin: 0;
+    }
+
+    #home-title-big {
+        font-weight: 900;
+        font-size: 2.5vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-title-small {
+        font-weight: 900;
+        font-size: 1.2vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-text {
+        font-weight: 500;
+        font-size: 1.2vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-img{
+        width:100%;
+
+    }
+
+    #end-logo{
+        width: 15vw;
+        margin-bottom: 3.5%;
+    }
+
+    #end-logo-text{
+        color: #052339;
+        font-size: 1vw;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 3.3%;
+    }
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1680px) {
+    .not-visible {
+        display: none;
+    }
+
+    #page-container {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
+    #nav-link{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.6vw;
+        letter-spacing: 1px;
+    }
+
+    #nav-link:hover{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.6vw;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #nav-link-active{
+        color: white;
+        font-size: 1.6vw;
+        font-family: minion-pro, serif;
+        font-weight: bold;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #Logo-box {
+        width: 40%;
+    }
+
+    #nav-logo{
+        width:5.8vh;
+    }
+
+    #logo-big {
+        color: white;
+        font-size: 2.45vh;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        line-height: 0;
+    }
+
+    #logo-small {
+        color: white;
+        font-size: 1.2vh;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 0;
+    }
+
+    #toolbar {
+        margin: 0;
+    }
+
+    #home-title-big {
+        font-weight: 900;
+        font-size: 2.8vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-title-small {
+        font-weight: 900;
+        font-size: 1.4vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-text {
+        font-weight: 500;
+        font-size: 24px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-img{
+        width:100%;
+
+    }
+
+    #end-logo{
+        width: 15vw;
+        margin-bottom: 3.5%;
+    }
+
+    #end-logo-text{
+        color: #052339;
+        font-size: 1vw;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 3.3%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1130px) {
+    .not-visible {
+        display: none;
+    }
+
+    #page-container {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    #nav-link{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.6vw;
+        letter-spacing: 1px;
+    }
+
+    #nav-link:hover{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.6vw;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #nav-link-active{
+        color: white;
+        font-size: 1.6vw;
+        font-family: minion-pro, serif;
+        font-weight: bold;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #Logo-box {
+        width: 80%;
+    }
+
+    #nav-logo{
+        width:5.8vh;
+    }
+
+    #logo-big {
+        color: white;
+        font-size: 1.9vmax;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        line-height: 0;
+    }
+
+    #logo-small {
+        color: white;
+        font-size: 0.9vmax;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+        line-height: 0;
+    }
+
+    #toolbar {
+        margin: 0;
+    }
+
+    #home-title-big {
+        font-weight: 900;
+        font-size: 3.2vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-title-small {
+        font-weight: 900;
+        font-size: 2vw;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-text {
+        font-weight: 500;
+        font-size: 20px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-img{
+        width:100%;
+
+    }
+
+    #end-logo{
+        width: 15vw;
+        margin-bottom: 11%;
+    }
+
+    #end-logo-text{
+        color: #052339;
+        font-size: 1vw;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .not-visible {
+        display: none;
+    }
+
+    #page-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #nav-link{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.8vmax;
+        letter-spacing: 1px;
+    }
+
+    #nav-link:hover{
+        color: white;
+        font-family: minion-pro, serif;
+        font-size: 1.8vmax;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #nav-link-active{
+        color: white;
+        font-size: 1.8vmax;
+        font-family: minion-pro, serif;
+        font-weight: bold;
+        text-decoration-line:underline;
+        letter-spacing: 1px;
+    }
+
+    #Logo-box {
+        width: 70%;
+    }
+
+    #nav-logo{
+        width:5.8vh;
+    }
+
+    #logo-big {
+        color: white;
+        font-size: 2.2vmax;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        line-height: 0;
+    }
+
+    #logo-small {
+        color: white;
+        font-size: 1.1vmax;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        line-height: 0;
+    }
+
+    #toolbar {
+        margin: 0;
+    }
+
+    #home-title-big {
+        font-weight: 900;
+        font-size: 30px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-title-small {
+        font-weight: 900;
+        font-size: 20px;
+        font-family: 'Maven Pro', sans-serif;
+        line-height: 1;
+    }
+
+    #home-text {
+        font-weight: 500;
+        font-size: 20px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    #home-img{
+        width:100%;
+
+    }
+
+    #end-logo{
+        width: 15vmax;
+        margin-bottom: 11%;
+    }
+
+    #end-logo-text{
+        color: #052339;
+        font-size: 1.2vmax;
+        font-family: minion-pro, serif;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 10%;
+    }
+}
