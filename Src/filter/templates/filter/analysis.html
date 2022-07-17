@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'filter/analysis.js' %}" defer></script>
+{% endblock scripts %}
+
+{% block title %}
+microbiome
+{% endblock title %}
+
+{% block content %}
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #052339;">
+        <div class="container-fluid">
+                <a href="/home/"><img id="nav-logo" src="/media/Logo1_3.png" class="d-inline-block align-bottom"></a>
+            <div id="Logo-box" class="mt-2 mb-1">
+                <a id="logo-big" class="text-uppercase text-decoration-none" href="/home/">Comprehensive Database</a><br>
+                <a id="logo-small" class="text-uppercase text-decoration-none" href="/home/">Of Phenotype-specific Gut Metagenome Profiling</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-1">
+                        <a id="nav-link" class="nav-link" href="/home/">Home</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a id="nav-link-active" class="nav-link active" aria-current="page" href="/analysis/">Analysis</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a id="nav-link" class="nav-link" href="/data/">Data</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a id="nav-link" class="nav-link" href="/data/">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page-container" class="mt-4 mb-3">
+        <div style="height: 5vh;"></div>
+        <div class="card mb-3">
+            <div class="card-header text-white h5 fw-bold" style="background-color: #052339;">
+                Select Dataset 1
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Phenotype</h6>
+                        <p class="card-text"></p>
+                        <select class="form-select" id="phenotype_1_select">
+                            <option selected disabled>Choose Phenotype #1 (required)</option>
+                            {% for c in alltype %}
+                            <option value={{c.phenotype}}>{{c.phenotype}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Gender</h6>
+                        <p class="card-text"></p>
+                        <select class="form-select" id="gender_1_select">
+                            <option selected disabled>---------</option>
+
+                        </select>
+                    </div>
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Geo Location</h6>
+                        <p class="card-text"></p>
+                        <select class="form-select" id="geo_1_select">
+                            <option selected disabled>---------</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Age <small>(0-99 only)</small></h6>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text">From</span>
+                            <input id="age1-bottom" type="number" oninput="if(value>99)value=99;if(value.length>2)value=value.slice(0,2)" aria-label="First name" class="form-control">
+                            <span class="input-group-text">to</span>
+                            <input id="age1-top" type="number" oninput="if(value>99)value=99;if(value.length>2)value=value.slice(0,2)" aria-label="Last name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="card-title fw-bold">BMI <small>(0-60 only)</small></h6>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text">From</span>
+                            <input id="bmi1-bottom" type="number" oninput="if(value>60)value=60;if(value.length>2)value=value.slice(0,2)" aria-label="First name" class="form-control">
+                            <span class="input-group-text">to</span>
+                            <input id="bmi1-top" type="number" oninput="if(value>60)value=60;if(value.length>2)value=value.slice(0,2)" aria-label="Last name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col d-md-flex align-items-end justify-content-md-end">
+                        <h6 class="card-title fw-bold"> <br> </h6>
+                        <button id="submit-1" type="button" class="btn fw-bold" style="background-color: #052339; color: white;">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="spinner-box-1" class="text-center not-visible">
+                <div class="spinner-border text-primary m-5" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div id="data_list_box_1"></div>
+        </div>
+        <div class="card mb-5" >
+            <div class="card-header text-white h5 fw-bold" style="background-color: #052339;">
+                Select Dataset 2
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Phenotype</h6>
+                        <p class="card-text"></p>
+                        <select class="form-select" id="phenotype_2_select" >
+                            <option selected disabled>Choose Phenotype #2 (required)</option>
+                            {% for c in alltype %}
+                            <option value={{c.phenotype}}>{{c.phenotype}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Gender</h6>
+                        <p class="card-text"></p>
+                        <select class="form-select" id="gender_2_select">
+                            <option selected disabled>---------</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Geo Location</h6>
+                        <p class="card-text"></p>
+                        <select class="form-select" id="geo_2_select">
+                            <option selected disabled>---------</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col">
+                        <h6 class="card-title fw-bold">Age <small>(0-99 only)</small></h6>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text">From</span>
+                            <input id="age2-bottom" type="number" oninput="if(value>99)value=99;if(value.length>2)value=value.slice(0,2)" aria-label="First name" class="form-control">
+                            <span class="input-group-text">to</span>
+                            <input id="age2-top" type="number" oninput="if(value>99)value=99;if(value.length>2)value=value.slice(0,2)" aria-label="Last name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="card-title fw-bold">BMI <small>(0-60 only)</small></h6>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text">From</span>
+                            <input id="bmi2-bottom" type="number" oninput="if(value>99)value=99;if(value.length>2)value=value.slice(0,2)" aria-label="First name" class="form-control">
+                            <span class="input-group-text">to</span>
+                            <input id="bmi2-top" type="number" oninput="if(value>99)value=99;if(value.length>2)value=value.slice(0,2)" aria-label="Last name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col d-md-flex align-items-end justify-content-md-end">
+                        <h6 class="card-title fw-bold"> <br> </h6>
+                        <button id="submit-2" type="button" class="btn fw-bold" style="background-color: #052339; color: white;">Submit</button>
+                    </div>
+                </div>
+                <div id="spinner-box-2" class="text-center not-visible">
+                    <div class="spinner-border text-primary m-5" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <div id="data_list_box_2"></div>
+            </div>
+        </div>
+        <div class="text-center fw-bold">
+            <a>	&#42;Estimated time required  :  &#91;  1.5 x total of the chosen samples  &#93; second</a>
+        </div>
+        <div class="d-grid gap-2" style="margin-bottom: 8vh;">
+            <button id="start-analysis" type="button" class="btn fw-bold fs-1 btn-lg not-visible mt-3" style="background-color: #052339; color: white;">Start Analysis</button>
+            <div id="spinner-box-3" class="text-center not-visible">
+                <div class="spinner-border text-primary m-5" role="status"></div>
+            </div>
+            <div id="spinner-box-4" class="text-center not-visible">
+                <span>Analyzing...</span>
+                <div id="counter">00 hour 00 min 00.000 sec</div>
+            </div>
+            <div id="analysised_data_box" style="margin-bottom: 8vh;"></div>
+        </div>
+    </div>
+    <div id="foot-blank" class="position-relative" style="height: 30vh;">
+        <img id="end-logo" src="/media/Logo2_cut2.png" class="d-inline-block align-bottom position-absolute bottom-0 start-50 translate-middle-x"  href="/home/">
+        <p id="end-logo-text" class="d-inline-block align-bottom position-absolute bottom-0 start-50 translate-middle-x">Comprehensive Database</p>
+    </div>
+{% endblock content %}
